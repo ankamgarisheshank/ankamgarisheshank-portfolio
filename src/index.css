@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Theme */
+:root {
+  --background-color: white;
+  --text-color: black; /* Pure black text for light theme */
+  --primary-color: #0284c7; /* Example primary color */
+  --secondary-color: #7dd3fc; /* Example secondary color */
+}
+
+/* Dark Theme */
+.dark {
+  --background-color: #0F172A;
+  --text-color: white; /* White text for dark theme */
+  --primary-color: #38bdf8; /* Example primary color for dark mode */
+  --secondary-color: #1E293B; /* Example secondary color for dark mode */
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color); /* Use the text color variable */
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li, button {
+  color: var(--text-color); /* Ensure all text elements use the text color variable */
+}
+
+/* Ensure modal text is visible in light mode */
+.fixed {
+  color: var(--text-color); /* Use the text color variable for modal text */
+}
